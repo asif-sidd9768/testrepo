@@ -29,6 +29,9 @@ def main():
         if check():
             print(message)
             sys.exit(1)
+    everything_ok = True
+    if not everything_ok:
+        sys.exit(1)
     print("Everything ok.")
     sys.exit(0)
 
